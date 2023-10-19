@@ -8,31 +8,17 @@ public class Perro {
         this.raza = raza;
         this.edad = edad;
     }
-    public String getNombre() {
-        return nombre;
-    }
-    public String getRaza() {
-        return raza;
-    }
-    public int getEdad() {
-        return edad;
-    }
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
-    }
-    public void setRaza(String raza) {
-        this.raza = raza;
-    }
-    public void setEdad(int edad) {
-        this.edad = edad;
-    }
     public void crearPerro(){
-            System.out.println("Nombre: "+nombre);
-            System.out.println("Raza: "+raza);
-            System.out.println("Edad: "+edad);
+        System.out.println("Nombre: "+nombre);
+        System.out.println("Raza: "+raza);
+        System.out.println("Edad: "+edad);
+    }
+    public void ladrar(){
+        System.out.println("Guau, Guau");
     }
     public static void main(String [] args){
-            Perro perro1 = new Perro("Ricardo", "Pitbull",2);
-            perro1.crearPerro();
+        Perro perro1 = new Perro("Ricardo", "Pitbull",2);
+        perro1.crearPerro();
+        perro1.ladrar();
     }
 }
