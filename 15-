@@ -1,0 +1,19 @@
+public class Pelicula {
+    private String titulo;
+    private String director;
+    private int duracionEnMinutos;
+    public Pelicula(String titulo, String director, int duracionEnMinutos){
+        this.titulo = titulo;
+        this.director = director;
+        this.duracionEnMinutos = duracionEnMinutos;
+    }
+    public void infoPelicula(){
+        System.out.println("Título: "+titulo);
+        System.out.println("Director: "+director);
+        System.out.println("Duración en minutos: "+duracionEnMinutos);
+    }
+    public static void main(String [] args){
+        Pelicula p1 = new Pelicula("Star wars: Episodio III - La venganza de los Sith", "George Lucas", 140);
+        p1.infoPelicula();
+    }
+}
